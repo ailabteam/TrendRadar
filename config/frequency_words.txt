@@ -1,113 +1,118 @@
-胖东来
-于东来
+# ==============================================================================
+# QUAN TÂM CHÍNH: LƯỢNG TỬ, AI, VỆ TINH & MẠNG 6G
+# ==============================================================================
 
-DeepSeek
-梁文锋
+# --- 1. LƯỢNG TỬ & MẠNG TRÊN KHÔNG (Quantum + Satellite/Aerial Networks) ---
+# Yêu cầu các từ khóa phải xuất hiện cùng nhau để có độ chính xác cao
+quantum+satellite
+quantum+NTN
+quantum+SAGINs
+"quantum communication"+satellite
+"quantum network"+satellite
+"quantum key distribution"+satellite
+QKD+satellite
+"quantum computing"+space
+"satellite quantum"
+"quantum sensing"+satellite
+"aerial quantum"
 
-华为
-鸿蒙
-HarmonyOS
-任正非
+# --- 2. AI & MẠNG TRÊN KHÔNG (AI + Satellite/Aerial Networks) ---
+AI+satellite
+"Artificial Intelligence"+satellite
+"machine learning"+satellite
+"deep learning"+satellite
+AI+NTN
+AI+SAGINs
+"reinforcement learning"+satellite
+"federated learning"+satellite
+"AI for NTN"
+"AI for SAGINs"
+"satellite imagery"+AI
+"satellite communication"+AI
 
-比亚迪
-王传福
+# --- 3. MẠNG 6G & CÁC CÔNG NGHỆ LIÊN QUAN ---
+6G
+"6G network"
+"6G communication"
+"beyond 5G"
+B5G
+"terahertz communication"
+THz
+"intelligent reflecting surface"
+IRS
+RIS
+"reconfigurable intelligent surface"
+"cell-free massive MIMO"
+"holographic radio"
+"integrated sensing and communication"
+ISAC
+"semantic communication"
+"age of information"
+AoI
+"network slicing"+6G
 
-大疆
-DJI
+# ==============================================================================
+# QUAN TÂM PHỤ: FEDERATED LEARNING & KIẾN TRÚC AI
+# ==============================================================================
 
-宇树
-王兴兴
+# --- 4. FEDERATED LEARNING (HỌC TẬP LIÊN BANG) ---
+"federated learning"
+FL
+"federated optimization"
+"federated averaging"
+FedAvg
+"personalized federated learning"
+"asynchronous federated learning"
+"hierarchical federated learning"
+"decentralized federated learning"
+"split learning"
 
-智元
-灵犀
-稚晖君
-彭志辉
+# --- 5. KIẾN TRÚC AI & MÔ HÌNH NỀN TẢNG (AI Architectures & Foundation Models) ---
+Transformer
+"attention mechanism"
+"large language model"
+LLM
+"foundation model"
+"vision transformer"
+ViT
+"generative adversarial network"
+GAN
+"diffusion model"
+"graph neural network"
+GNN
+"neural architecture search"
+NAS
+"mixture of experts"
+MoE
+"model compression"
+"model quantization"
+"parameter-efficient fine-tuning"
+PEFT
+LoRA
 
-黑神话
-冯骥
+# ==============================================================================
+# QUAN TÂM CHUNG: CÁC LĨNH VỰC CÔNG NGHỆ CAO KHÁC
+# ==============================================================================
 
-影之刃零
-梁其伟
+# --- 6. CÁC TỪ KHÓA CÔNG NGHỆ CHUNG ---
+robotics
+"autonomous systems"
+"self-driving"
+"computer vision"
+"natural language processing"
+NLP
+"semiconductor"
+chiplet
+"photonic integrated circuit"
+"neuromorphic computing"
 
-哪吒
-饺子
-杨宇
-!车
-!餐
-
-三体
-流浪地球
-刘慈欣
-郭帆
-
-申奥
-
-京东
-刘强东
-
-字节
-bytedance
-张一鸣
-
-特斯拉
-马斯克
-
-微软
-Microsoft
-
-英伟达
-NVIDIA
-黄仁勋
-
-AMD
-
-谷歌
-google
-gemini
-deepmind
-
-chatgpt
-openai
-sora
-
-claude
-Anthropic
-
-iphone
-ipad
-mac
-ios
-
-ai
-!gai
-人工智能
-
-自动驾驶
-
-机器人
-
-国产
-中国
-
-美国
-日本
-韩国
-
-芯片
-光刻机
-
-科技
-
-核能
-
-水电站
-雅鲁藏布江
-
-新质生产力
-
-月球
-登月
-火星
-宇宙
-飞船
-航空
+# --- 7. TÊN CÁC CÔNG TY & PHÒNG LAB NỔI TIẾNG (Tùy chọn) ---
+# Bạn có thể bật các dòng này nếu muốn theo dõi paper từ các tổ chức cụ thể
+# DeepMind
+# OpenAI
+# "Meta AI"
+# "Google AI"
+# "Microsoft Research"
+# NVIDIA
+# Huawei
+# "Bell Labs"
