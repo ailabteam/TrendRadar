@@ -1,63 +1,39 @@
-# ==============================================================================
-# DANH SÁCH TỪ KHÓA GIÁM SÁT SONG NGỮ ANH-TRUNG
-# Mỗi khối cách nhau bằng một dòng trống là một nhóm chủ đề riêng.
-# ==============================================================================
-
-# --- CÁC CÔNG TY & CÔNG NGHỆ AI HÀNG ĐẦU ---
-# Theo dõi các công ty AI lớn và sản phẩm của họ
 DeepSeek
 DeepMind
 谷歌
 google
 gemini
-
 OpenAI
 chatgpt
 sora
-
 Claude
 Anthropic
-
 微软
 Microsoft
 
-# --- CÁC CÔNG TY PHẦN CỨNG & CHIP ---
-# Theo dõi các nhà sản xuất chip và công nghệ liên quan
 英伟达
 NVIDIA
 黄仁勋
-
 AMD
-
 芯片
 光刻机
 
-# --- CÁC TẬP ĐOÀN CÔNG NGHỆ LỚN ---
-# Theo dõi các Big Tech và các công nghệ cốt lõi của họ
 华为
 Huawei
 鸿蒙
 HarmonyOS
-
 比亚迪
 BYD
 王传福
-
 字节
 bytedance
 张一鸣
-
 特斯拉
 Tesla
 马斯克
 自动驾驶
-
 京东
 刘强东
-
-# --- CÁC CHỦ ĐỀ NGHIÊN CỨU CỦA BẠN ---
-# Mỗi dòng là một nhóm OR, ví dụ: "quantum" HOẶC "量子"
-# Dùng dấu + để yêu cầu các từ phải cùng xuất hiện (AND)
 
 quantum,量子
 satellite,卫星
@@ -65,8 +41,6 @@ AI,人工智能,"机器学习"
 6G,"第六代移动通信"
 "Federated Learning","联邦学习",FL
 
-# --- CÁC TỔ HỢP TỪ KHÓA CHUYÊN NGÀNH ---
-# Tìm kiếm sự giao thoa giữa các lĩnh vực
 quantum+satellite,量子+卫星
 AI+satellite,人工智能+卫星
 "quantum computing","量子计算"
@@ -76,8 +50,6 @@ NTN,"非地面网络"
 SAGINs,"空天地一体化网络"
 AI+6G,人工智能+6G
 
-# --- KIẾN TRÚC AI & MÔ HÌNH NỀN TẢNG ---
-# Các thuật ngữ về kiến trúc mô hình
 Transformer
 LLM,"大语言模型"
 "Foundation Model","基础模型"
@@ -85,8 +57,6 @@ LLM,"大语言模型"
 "graph neural network","图神经网络",GNN
 "Mixture of Experts",MoE
 
-# --- CÁC LĨNH VỰC CÔNG NGHỆ CHUNG ---
-# Các từ khóa công nghệ rộng hơn
 机器人,robot
 科技,technology
 航空,aerospace
