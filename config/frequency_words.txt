@@ -3,7 +3,6 @@
 # ==============================================================================
 
 # --- 1. LƯỢNG TỬ & MẠNG TRÊN KHÔNG (Quantum + Satellite/Aerial Networks) ---
-# Yêu cầu các từ khóa phải xuất hiện cùng nhau để có độ chính xác cao
 quantum+satellite
 quantum+NTN
 quantum+SAGINs
@@ -89,30 +88,3 @@ MoE
 "parameter-efficient fine-tuning"
 PEFT
 LoRA
-
-# ==============================================================================
-# QUAN TÂM CHUNG: CÁC LĨNH VỰC CÔNG NGHỆ CAO KHÁC
-# ==============================================================================
-
-# --- 6. CÁC TỪ KHÓA CÔNG NGHỆ CHUNG ---
-robotics
-"autonomous systems"
-"self-driving"
-"computer vision"
-"natural language processing"
-NLP
-"semiconductor"
-chiplet
-"photonic integrated circuit"
-"neuromorphic computing"
-
-# --- 7. TÊN CÁC CÔNG TY & PHÒNG LAB NỔI TIẾNG (Tùy chọn) ---
-# Bạn có thể bật các dòng này nếu muốn theo dõi paper từ các tổ chức cụ thể
-# DeepMind
-# OpenAI
-# "Meta AI"
-# "Google AI"
-# "Microsoft Research"
-# NVIDIA
-# Huawei
-# "Bell Labs"
