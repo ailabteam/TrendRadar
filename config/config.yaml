@@ -18,7 +18,7 @@ crawler:
 report:
   # 'incremental' là chế độ tốt nhất cho bạn: Chỉ gửi thông báo khi có bài báo MỚI.
   # Sẽ không có tin nhắn nào được gửi nếu không có gì mới.
-  mode: "incremental"
+  mode: "current"
   rank_threshold: 5
 
 # Cài đặt thông báo
