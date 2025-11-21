@@ -1,204 +1,93 @@
-胖东来
-于东来
+# ==============================================================================
+# DANH SÁCH TỪ KHÓA GIÁM SÁT SONG NGỮ ANH-TRUNG
+# Mỗi khối cách nhau bằng một dòng trống là một nhóm chủ đề riêng.
+# ==============================================================================
 
+# --- CÁC CÔNG TY & CÔNG NGHỆ AI HÀNG ĐẦU ---
+# Theo dõi các công ty AI lớn và sản phẩm của họ
 DeepSeek
-梁文锋
+DeepMind
+谷歌
+google
+gemini
 
-华为
-鸿蒙
-HarmonyOS
-任正非
+OpenAI
+chatgpt
+sora
 
-比亚迪
-王传福
-
-大疆
-DJI
-
-宇树
-王兴兴
-
-智元
-灵犀
-稚晖君
-彭志辉
-
-黑神话
-冯骥
-
-影之刃零
-梁其伟
-
-哪吒
-饺子
-杨宇
-!车
-!餐
-
-三体
-流浪地球
-刘慈欣
-郭帆
-
-申奥
-
-京东
-刘强东
-
-字节
-bytedance
-张一鸣
-
-特斯拉
-马斯克
+Claude
+Anthropic
 
 微软
 Microsoft
 
+# --- CÁC CÔNG TY PHẦN CỨNG & CHIP ---
+# Theo dõi các nhà sản xuất chip và công nghệ liên quan
 英伟达
 NVIDIA
 黄仁勋
 
 AMD
 
-谷歌
-google
-gemini
-deepmind
-
-chatgpt
-openai
-sora
-
-claude
-Anthropic
-
-iphone
-ipad
-mac
-ios
-
-ai
-!gai
-人工智能
-
-自动驾驶
-
-机器人
-
-国产
-中国
-
-美国
-日本
-韩国
-
 芯片
 光刻机
 
-科技
+# --- CÁC TẬP ĐOÀN CÔNG NGHỆ LỚN ---
+# Theo dõi các Big Tech và các công nghệ cốt lõi của họ
+华为
+Huawei
+鸿蒙
+HarmonyOS
 
-核能
+比亚迪
+BYD
+王传福
 
-水电站
-雅鲁藏布江
+字节
+bytedance
+张一鸣
 
-新质生产力
+特斯拉
+Tesla
+马斯克
+自动驾驶
 
-月球
-登月
-火星
-宇宙
-飞船
-航空
+京东
+刘强东
 
-# ==============================================================================
-# QUAN TÂM CHÍNH: LƯỢNG TỬ, AI, VỆ TINH & MẠNG 6G
-# ==============================================================================
+# --- CÁC CHỦ ĐỀ NGHIÊN CỨU CỦA BẠN ---
+# Mỗi dòng là một nhóm OR, ví dụ: "quantum" HOẶC "量子"
+# Dùng dấu + để yêu cầu các từ phải cùng xuất hiện (AND)
 
-# --- 1. LƯỢNG TỬ & MẠNG TRÊN KHÔNG (Quantum + Satellite/Aerial Networks) ---
-quantum+satellite
-quantum+NTN
-quantum+SAGINs
-"quantum communication"+satellite
-"quantum network"+satellite
-"quantum key distribution"+satellite
-QKD+satellite
-"quantum computing"+space
-"satellite quantum"
-"quantum sensing"+satellite
-"aerial quantum"
+quantum,量子
+satellite,卫星
+AI,人工智能,"机器学习"
+6G,"第六代移动通信"
+"Federated Learning","联邦学习",FL
 
-# --- 2. AI & MẠNG TRÊN KHÔNG (AI + Satellite/Aerial Networks) ---
-AI+satellite
-"Artificial Intelligence"+satellite
-"machine learning"+satellite
-"deep learning"+satellite
-AI+NTN
-AI+SAGINs
-"reinforcement learning"+satellite
-"federated learning"+satellite
-"AI for NTN"
-"AI for SAGINs"
-"satellite imagery"+AI
-"satellite communication"+AI
+# --- CÁC TỔ HỢP TỪ KHÓA CHUYÊN NGÀNH ---
+# Tìm kiếm sự giao thoa giữa các lĩnh vực
+quantum+satellite,量子+卫星
+AI+satellite,人工智能+卫星
+"quantum computing","量子计算"
+"quantum network","量子网络"
+QKD,"量子密钥分发"
+NTN,"非地面网络"
+SAGINs,"空天地一体化网络"
+AI+6G,人工智能+6G
 
-# --- 3. MẠNG 6G & CÁC CÔNG NGHỆ LIÊN QUAN ---
-6G
-"6G network"
-"6G communication"
-"beyond 5G"
-B5G
-"terahertz communication"
-THz
-"intelligent reflecting surface"
-IRS
-RIS
-"reconfigurable intelligent surface"
-"cell-free massive MIMO"
-"holographic radio"
-"integrated sensing and communication"
-ISAC
-"semantic communication"
-"age of information"
-AoI
-"network slicing"+6G
-
-# ==============================================================================
-# QUAN TÂM PHỤ: FEDERATED LEARNING & KIẾN TRÚC AI
-# ==============================================================================
-
-# --- 4. FEDERATED LEARNING (HỌC TẬP LIÊN BANG) ---
-"federated learning"
-FL
-"federated optimization"
-"federated averaging"
-FedAvg
-"personalized federated learning"
-"asynchronous federated learning"
-"hierarchical federated learning"
-"decentralized federated learning"
-"split learning"
-
-# --- 5. KIẾN TRÚC AI & MÔ HÌNH NỀN TẢNG (AI Architectures & Foundation Models) ---
+# --- KIẾN TRÚC AI & MÔ HÌNH NỀN TẢNG ---
+# Các thuật ngữ về kiến trúc mô hình
 Transformer
-"attention mechanism"
-"large language model"
-LLM
-"foundation model"
-"vision transformer"
-ViT
-"generative adversarial network"
-GAN
-"diffusion model"
-"graph neural network"
-GNN
-"neural architecture search"
-NAS
-"mixture of experts"
-MoE
-"model compression"
-"model quantization"
-"parameter-efficient fine-tuning"
-PEFT
-LoRA
+LLM,"大语言模型"
+"Foundation Model","基础模型"
+"diffusion model","扩散模型"
+"graph neural network","图神经网络",GNN
+"Mixture of Experts",MoE
+
+# --- CÁC LĨNH VỰC CÔNG NGHỆ CHUNG ---
+# Các từ khóa công nghệ rộng hơn
+机器人,robot
+科技,technology
+航空,aerospace
+宇宙,universe
