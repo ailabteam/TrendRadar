@@ -1,27 +1,18 @@
-# ==============================================================================
-# TrendRadar Configuration - TÙY CHỈNH CHO NGHIÊN CỨU KHOA HỌC
-# ==============================================================================
-
-# Cài đặt chung của ứng dụng
 app:
   version_check_url: "https://raw.githubusercontent.com/sansan0/TrendRadar/refs/heads/master/version"
   show_version_update: true
 
-# Cài đặt trình thu thập dữ liệu (crawler)
 crawler:
-  request_interval: 2000 # Tăng khoảng chờ giữa các yêu cầu lên 2 giây để tránh bị block
+  request_interval: 2000 # 2 giây giữa các yêu cầu
   enable_crawler: true
   use_proxy: false
   default_proxy: "http://127.0.0.1:10086"
 
-# Cài đặt chế độ báo cáo
 report:
-  # 'incremental' là chế độ tốt nhất cho bạn: Chỉ gửi thông báo khi có bài báo MỚI.
-  # Sẽ không có tin nhắn nào được gửi nếu không có gì mới.
+  # Sử dụng "current" để kiểm tra, nó sẽ gửi tất cả những gì tìm thấy
   mode: "current"
-  rank_threshold: 5
+  rank_threshold: 10
 
-# Cài đặt thông báo
 notification:
   enable_notification: true
   message_batch_size: 4000
@@ -30,90 +21,45 @@ notification:
   batch_send_interval: 3
   feishu_message_separator: "━━━━━━━━━━━━━━━━━━━"
   push_window:
-    enabled: false # Tắt cửa sổ thời gian để nhận tin ngay khi có
-  
-  # Thông tin webhook và bot token sẽ được lấy từ GitHub Secrets,
-  # KHÔNG cần điền vào đây.
+    enabled: false
   webhooks:
-    feishu_url: ""
-    dingtalk_url: ""
-    wework_url: ""
-    wework_msg_type: "markdown"
     telegram_bot_token: ""
     telegram_chat_id: ""
-    email_from: ""
-    email_password: ""
-    email_to: ""
-    email_smtp_server: ""
-    email_smtp_port: ""
-    ntfy_server_url: "https://ntfy.sh"
-    ntfy_topic: ""
-    ntfy_token: ""
 
-# Cài đặt trọng số thuật toán (giữ nguyên mặc định)
 weight:
   rank_weight: 0.6
   frequency_weight: 0.3
   hotness_weight: 0.1
 
-# ==============================================================================
-# CẤU HÌNH NỀN TẢNG (PLATFORMS) - ĐÂY LÀ PHẦN QUAN TRỌNG NHẤT
-# ==============================================================================
-# Tôi đã thay thế tất cả các nguồn tin tức bằng các nguồn học thuật.
-# Mỗi nguồn là một truy vấn tìm kiếm khác nhau trên arXiv.
 platforms:
-  # --- NGUỒN 1: arXiv cho Lượng tử, AI & Vệ tinh ---
+  # === CÁC NGUỒN HỌC THUẬT CỦA BẠN (ĐÃ BẬT) ===
   - id: "arxiv_quantum_ai_satellite"
     name: "arXiv: Quantum/AI/Satellite"
-    enabled: true  # Bật nguồn này
+    enabled: true
     source_type: rss
     url: "https://export.arxiv.org/rss/cs?searchtype=abstract&query=%28quantum+OR+AI+OR+%22machine+learning%22%29+AND+%28satellite+OR+NTN+OR+SAGINs%29"
 
-  # --- NGUỒN 2: arXiv cho Mạng 6G ---
-  - id: "arxiv_6g"
-    name: "arXiv: 6G & B5G"
+  - id: "arxiv_6g_fl"
+    name: "arXiv: 6G & FL"
     enabled: true
     source_type: rss
-    url: "https://export.arxiv.org/rss/cs?searchtype=abstract&query=6G+OR+%22beyond+5G%22+OR+B5G+OR+terahertz+OR+RIS+OR+ISAC+OR+%22semantic+communication%22"
+    url: "https://export.arxiv.org/rss/cs?searchtype=abstract&query=6G+OR+%22federated+learning%22"
 
-  # --- NGUỒN 3: arXiv cho Federated Learning & Kiến trúc AI ---
-  - id: "arxiv_fl_ai_arch"
-    name: "arXiv: FL & AI Arch"
+  - id: "emergent_mind"
+    name: "Emergent Mind"
     enabled: true
     source_type: rss
-    url: "https://export.arxiv.org/rss/cs?searchtype=title&query=%22federated+learning%22+OR+transformer+OR+LLM+OR+%22diffusion+model%22+OR+GNN"
-  
-  # --- Các nguồn tin tức gốc đã được vô hiệu hóa ---
-  - id: "toutiao"
-    name: "今日头条"
-    enabled: false
-  - id: "baidu"
-    name: "百度热搜"
-    enabled: false
-  - id: "wallstreetcn-hot"
-    name: "华尔街见闻"
-    enabled: false
-  - id: "thepaper"
-    name: "澎湃新闻"
-    enabled: false
-  - id: "bilibili-hot-search"
-    name: "bilibili 热搜"
-    enabled: false
-  - id: "cls-hot"
-    name: "财联社热门"
-    enabled: false
-  - id: "ifeng"
-    name: "凤凰网"
-    enabled: false
-  - id: "tieba"
-    name: "贴吧"
-    enabled: false
-  - id: "weibo"
-    name: "微博"
-    enabled: false
-  - id: "douyin"
-    name: "抖音"
-    enabled: false
-  - id: "zhihu"
-    name: "知乎"
-    enabled: false
+    url: "https://www.emergentmind.com/rss"
+    
+  # === CÁC NGUỒN MẶC ĐỊNH (ĐÃ TẮT HOÀN TOÀN) ===
+  - { id: "toutiao", enabled: false }
+  - { id: "baidu", enabled: false }
+  - { id: "wallstreetcn-hot", enabled: false }
+  - { id: "thepaper", enabled: false }
+  - { id: "bilibili-hot-search", enabled: false }
+  - { id: "cls-hot", enabled: false }
+  - { id: "ifeng", enabled: false }
+  - { id: "tieba", enabled: false }
+  - { id: "weibo", enabled: false }
+  - { id: "douyin", enabled: false }
+  - { id: "zhihu", enabled: false }
