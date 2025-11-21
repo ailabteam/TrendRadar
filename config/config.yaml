@@ -89,27 +89,72 @@ weight:
   frequency_weight: 0.3 # 频次权重
   hotness_weight: 0.1 # 热度权重
 
-# name 可以定义任意名称，只具有显示作用，即使项目运行了几天后，忽然改掉 name 也不会影响代码的正常运行
+# ==============================================================================
+# CẤU HÌNH NỀN TẢNG (PLATFORMS) - ĐÂY LÀ PHẦN QUAN TRỌNG NHẤT
+# ==============================================================================
+# Tôi đã thay thế tất cả các nguồn tin tức bằng các nguồn học thuật.
+# Mỗi nguồn là một truy vấn tìm kiếm khác nhau.
 platforms:
+  # --- NGUỒN MỚI: Emergent Mind - Trending Papers ---
+  - id: "emergent_mind"
+    name: "Emergent Mind"
+    enabled: true
+    source_type: rss
+    url: "https://www.emergentmind.com/rss"
+
+  # --- NGUỒN 1: arXiv cho Lượng tử, AI & Vệ tinh ---
+  - id: "arxiv_quantum_ai_satellite"
+    name: "arXiv: Quantum/AI/Satellite"
+    enabled: true  # Bật nguồn này
+    source_type: rss
+    url: "https://export.arxiv.org/rss/cs?searchtype=abstract&query=%28quantum+OR+AI+OR+%22machine+learning%22%29+AND+%28satellite+OR+NTN+OR+SAGINs%29"
+
+  # --- NGUỒN 2: arXiv cho Mạng 6G ---
+  - id: "arxiv_6g"
+    name: "arXiv: 6G & B5G"
+    enabled: true
+    source_type: rss
+    url: "https://export.arxiv.org/rss/cs?searchtype=abstract&query=6G+OR+%22beyond+5G%22+OR+B5G+OR+terahertz+OR+RIS+OR+ISAC+OR+%22semantic+communication%22"
+
+  # --- NGUỒN 3: arXiv cho Federated Learning & Kiến trúc AI ---
+  - id: "arxiv_fl_ai_arch"
+    name: "arXiv: FL & AI Arch"
+    enabled: true
+    source_type: rss
+    url: "https://export.arxiv.org/rss/cs?searchtype=title&query=%22federated+learning%22+OR+transformer+OR+LLM+OR+%22diffusion+model%22+OR+GNN"
+  
+  # --- Các nguồn tin tức gốc đã được vô hiệu hóa ---
   - id: "toutiao"
     name: "今日头条"
+    enabled: false
   - id: "baidu"
     name: "百度热搜"
+    enabled: false
   - id: "wallstreetcn-hot"
-    name: "华尔街见闻"
+    name: "华晚街见闻"
+    enabled: false
   - id: "thepaper"
     name: "澎湃新闻"
+    enabled: false
   - id: "bilibili-hot-search"
     name: "bilibili 热搜"
+    enabled: false
   - id: "cls-hot"
     name: "财联社热门"
+    enabled: false
   - id: "ifeng"
     name: "凤凰网"
+    enabled: false
   - id: "tieba"
     name: "贴吧"
+    enabled: false
   - id: "weibo"
     name: "微博"
+    enabled: false
   - id: "douyin"
     name: "抖音"
+    enabled: false
   - id: "zhihu"
     name: "知乎"
+    enabled: false
+
